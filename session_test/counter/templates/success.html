@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>{{ title }} - Success</title>
+		{% load static %}
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+		<script src="{% static 'js/script.js' %}"></script>
+	</head>
+	<body>
+		<main class="container">
+			<div class="jumbotron">
+				<h1 class="mb-3 text-center">{{ title }}</h1>
+				<h4 class="mb-3 pb-3 text-center alert alert-success font-underlined"><u>Successfully Submitted Info</u></h4>
+				<div class="alert alert-info">
+					<div class="row align-items-center">
+						<p class="col-4 lead">Your Name:</p>
+						<p class="col">{{ name_from_form }}</p>
+					</div>
+					<div class="row align-items-center">
+						<p class="col-4 lead">Email Address:</p>
+						<p class="col">{{ email_from_form }}</p>
+					</div>
+					<div class="row align-items-center">
+						<p class="col-4 lead">Dojo Location:</p>
+						<p class="col">{{ location_from_form }}</p>
+					</div>
+					<div class="row align-items-center">
+						<p class="col-4 lead">Favorite Language:</p>
+						<p class="col">{{ favLang_from_form }}</p>
+					</div>
+					<div class="row">
+						<p class="col-4 lead">Your Comments:</p>
+						<p class="col">{{ comments_from_form }}</p>
+					</div>
+					<hr class="my-4">
+					<div class="row justify-content-between">
+						<p class="ml-3">{{ robot_from_form }}</p>
+						<a href="/back"><button type="button" class="px-3 py-2 mr-3 btn btn-success">Go Back</button></a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>
